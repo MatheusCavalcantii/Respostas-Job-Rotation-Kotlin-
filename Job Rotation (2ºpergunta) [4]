@@ -1,0 +1,18 @@
+fun main(args: Array<String>) {
+    
+    val faturamensaltomensal = listOf<Float>(67.836F, 36.678F, 29.229F, 27.165F, 19.849F)
+    
+    val soma = faturamensaltomensal[0]+faturamensaltomensal[1]+faturamensaltomensal[2]+faturamensaltomensal[3]+faturamensaltomensal[4]
+    
+    val sp: Float = faturamensaltomensal[0]/soma
+    val rj: Float = faturamensaltomensal[1]/soma
+    val mg: Float = faturamensaltomensal[2]/soma
+    val es: Float = faturamensaltomensal[3]/soma
+    val outros: Float = faturamensaltomensal[4]/soma
+    
+    println("A porcetagem de SP é:${sp*100}%")
+    println("A porcetagem de RJ é:${rj*100}%")
+    println("A porcetagem de MG é:${mg*100}%")
+    println("A porcetagem de ES é:${es*100}%")
+    println("A porcetagem de OUTROS é:${outros*100}%")
+}
