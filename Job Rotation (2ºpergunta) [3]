@@ -1,0 +1,31 @@
+fun main(args: Array<String>) {
+    
+    val valor = listOf<Float>(22174.1664F, 24537.6698F, 26139.6134F, 0.0F, 0.0F, 26742.6612F, 0.0F, 42889.2258F, 46251.174F, 11191.4722F, 0.0F, 0.0F, 3847.4823F, 373.7838F, 2659.7563F, 48924.2448F, 18419.2614F, 0.0F, 0.0F, 35240.1826F, 43829.1667F, 18235.6852F, 4355.0662F, 13327.1025F, 0.0F, 0.0F, 25681.8318F, 1718.1221F, 13220.495F, 8414.61F)
+    valor.forEach(){
+
+    }
+
+    var menor = valor[0]
+    for (valor in valor)
+        if (valor < menor){
+            menor = valor.toFloat()
+        }
+
+    var maior = valor[0]
+    for (valor in valor)
+        if (valor > maior){
+            maior = valor.toFloat()
+        }
+
+    val listamedia = listOf<Float>(22174.1664F, 24537.6698F, 26139.6134F, 26742.6612F, 42889.2258F, 46251.174F, 11191.4722F, 3847.4823F, 373.7838F, 2659.7563F, 48924.2448F, 18419.2614F, 35240.1826F, 43829.1667F, 18235.6852F, 4355.0662F, 13327.1025F, 25681.8318F, 1718.1221F, 13220.495F, 8414.61F)
+    var media = listamedia.average()
+    var fatsup = 0
+    for (listamedia in listamedia)
+        if (media < listamedia){
+            fatsup += 1
+        }
+
+    println("O menor valor de faturamento é:$menor")
+    println("O maior valor de faturamento é: $maior")
+    println("Número de dias no mês em que o valor de faturamento diário foi superior à média mensal é:$fatsup ")
+}
